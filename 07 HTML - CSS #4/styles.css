@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap');
+
+header {
+    background-color: #cccccc;
+    padding: 20px 0; /* top-bottom left-right*/
+}
+
+main {
+    position: relative;
+}
+
+.mainh {
+    position: relative;
+    width: 940px;
+    margin: auto;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+nav {
+    position: absolute; /* deafult is static */
+    top: 110px;
+    right: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ft {
+    text-align: center;
+    background: #000000;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer {
+    padding: 40px;
+}
+
+.copy {
+    font-size: 13px;
+    color: #ffffff;
+}
+
+.banner {
+    width: 100%;
+}
+
+.focusmiddle {
+    text-align: center;
+    font-size: 2em;
+    margin: 1em 0 1em;
+    clear: left;
+}
+
+.focusmiddle::first-letter {
+    font-weight: bold;
+}
+
+.frame {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.main {
+    background-color: #FEFEFE;
+    padding: 3em 0;
+}
+
+.main p {
+    margin: 0 0 1em;
+}
+
+.main strong {
+    font-weight: bold;
+}
+
+.main em {
+    font-style: italic;
+}
+
+.utens {
+    width: 250px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.img2 {
+    width: 50%;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.img2:hover {
+    opacity: 50%;
+}
+
+.map {
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.map p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.diferenciales {
+    padding: 3em 0;
+    background: linear-gradient(#888888, #333333);
+}
+
+.video {
+    text-align: center;
+    margin: 1em;
+}
+
+.content {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.diff {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items {
+    line-height: 1.5;
+}
+
+.items:first-child {
+    font-weight: bold;
+}
+
+.items::before {
+    content: "✯";
+}
+
+/* main > p { styles applied to main childs
+    background-color: red;
+} */
+
+/* img + p {
+    background-color: red;
+} */
+
+/* img ~ p {
+    background-color: green;
+} */
+
+/* .main p:not(#mision) {
+    background-color: orange;
+} */
+
+@media screen and (max-width:480px){
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: sticky;
+    }
+
+    .mainh, .frame, .content {
+        width: auto;
+    }
+
+    .video iframe {
+        width: 100%;
+    }
+
+    .diff, .img2 {
+        width: 100%;
+    }
+}

@@ -1,0 +1,167 @@
+header {
+    background-color: #cccccc;
+    padding: 20px 0; /* top-bottom left-right*/
+}
+
+.mainh {
+    position: relative;
+    width: 940px;
+    margin: auto;
+}
+
+body {
+    position: relative;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+nav {
+    position: absolute; /* deafult is static */
+    top: 110px;
+    right: 0px;
+}
+
+.prods {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.prods li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.prods h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.desc {
+    font-size: 18px;
+}
+
+.price {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.prods li:hover {
+    border-color: #c78c19;
+}
+
+.prods li:active {
+    border-color: #088c19;
+}
+
+.prods li:hover h2 {
+    font-size: 33px;
+}
+
+body { /* FIXED FOOTER*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.ft { 
+    text-align: center;
+    background: #000000;
+    margin-top: auto; /* FIXED FOOTER*/
+}
+
+footer {
+    padding: 40px;
+}
+
+.copy {
+    font-size: 13px;
+    color: #ffffff;
+}
+
+main { /*CENTER ELEMENTS*/
+    width: 940px; 
+    margin: 0 auto;
+}
+
+form { 
+    margin: 40px 0;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.padron {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px; /*top-bottom left-right*/
+    width: 50%;
+}
+
+.checkb {
+    margin: 20px 0;
+}
+
+.send {
+    width: 40%;
+    padding: 15px 0px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.send:hover {
+    background-color: darkorange;
+    transform: scale(1.1);
+}
+
+table {
+    text-align: center;
+    margin: 40px 40px;
+}
+
+thead {
+    background-color: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+

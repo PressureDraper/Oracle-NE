@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<h1>Multiplication Tables</h1>
+
+<script>
+    function jump() {
+        document.write("<br><br>");
+    }
+
+    function print(args) {
+        document.write(args);
+        jump();
+    }
+
+    var num = 1;
+    var sl = parseInt(prompt("Type number you want to know it's multiplication table: "))
+
+    print("WHILE cycle")
+
+    while (num <= 10) {
+        print(sl + " x " + num + " = " + (sl*num));
+        num++;
+    }
+
+    print("FOR cycle")
+
+    for (n=1;n<=10;n++) {
+        print(sl + " x " + n + " = " + (sl*n));
+    }
+</script>

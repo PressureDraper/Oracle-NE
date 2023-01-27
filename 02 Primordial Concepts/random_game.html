@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+
+<h1>Random Game</h1>
+
+<script>
+    function jump() {
+        document.write("<br><br>");
+    }
+
+    function print(args) {
+        document.write(args);
+        jump();
+    }
+
+    var num = Math.round(Math.random()*10)
+    var given = parseInt(prompt("Type your number"));
+
+    if (num === given) {
+        print("You got the number! :D")
+    } else {
+        print("Oops! Try again :(")
+        print("The number was: " + num)
+    }
+</script>

@@ -1,0 +1,44 @@
+<canvas width="600" height="400">
+
+</canvas>
+
+<script>
+    var screen = document.querySelector("canvas");
+    var brush = screen.getContext("2d");
+    var mov = 20;
+    var b = 0;
+
+    brush.fillStyle = "lightgrey"
+    brush.fillRect(0,0,600,400); //x,y -> position X,Y -> fill stuff
+
+    function circle(x,y,rad) {
+        brush.fillStyle = "black";
+        brush.beginPath();
+        brush.arc(x,y,rad,0,2*Math.PI);
+        brush.fill();
+    }
+
+    function clear() {
+        brush.clearRect(0,0,600,400);
+    }
+
+
+    setInterval(function() {
+        clear();
+        brush.fillStyle = "lightgrey";
+        brush.fillRect(0,0,600,400);
+        if (b === 0) {
+            circle(mov,20,10);
+            mov+=20;
+            if (mov == 580) {
+                b = 1;
+            }
+        } else {
+            circle(mov,20,10);
+            mov-=20;
+            if (mov == 20) {
+                b = 0;
+            }
+        }
+    }, 40);
+</script>

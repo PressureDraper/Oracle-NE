@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<h1>Lottery</h1>
+
+<script>
+    function jump() {
+        document.write("<br><br>");
+    }
+
+    function print(args) {
+        document.write(args);
+        jump();
+    }
+
+    function lottery(n) {
+        return Math.round(Math.random()*n);
+    }
+
+    var winner = lottery(50);
+    var given = parseInt(prompt("Type your number"));
+
+    if (winner === given) {
+        print("You are the winner! :D")
+    } else {
+        print("Oops! someone else won this time :(")
+        print("The number was: " + winner)
+    }
+</script>

@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<h1>FIFA World year</h1>
+
+<script>
+    function jump() {
+        document.write("<br><br>");
+    }
+
+    function print(args) {
+        document.write(args);
+        jump();
+    }
+
+    var wy = 1930;
+
+    print("There was a world FIFA championship in " + wy);
+
+    var lim = parseInt(prompt("Type the limit year you want to know FIFA World Championships"))
+
+    while (wy < lim) {
+        if ((wy + 4) <= lim) {
+            wy = wy + 4;
+            print("There was a world FIFA championship in " + wy);
+        } else {
+            wy = wy + 4
+        }
+    }
+</script>

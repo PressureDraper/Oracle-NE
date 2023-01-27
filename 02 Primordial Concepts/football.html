@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<h1>Calculate football points</h1>
+
+<script>
+    function jump() {
+        document.write("<br><br>");
+    }
+
+    function print(args) {
+        document.write(args);
+        jump();
+    }
+
+    var victories = parseInt(prompt("Type all victories")); 
+    var draws = parseInt(prompt("Type all draws"));
+
+    var totalPoints = victories * 3 + draws;
+    print("Total points: " + totalPoints)
+
+    if (totalPoints > 28) {
+        print("Team is going better! :)")
+    } else if ((totalPoints < 28)) {
+        print("Team is going worse! :(")
+    } else if ((totalPoints == 28)) {
+        print("Team stayed the same! :O")
+    }
+</script>

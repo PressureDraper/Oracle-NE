@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+
+<h1>IMC</h1>
+
+<script>
+    function jump() {
+        document.write("<br><br>");
+    }
+
+    function print(args) {
+        document.write(args);
+        jump();
+    }
+
+    function imCalc(weight, height) {
+        return weight / (height * height)
+    }
+
+    var name = prompt("Please type your name:") 
+    var weight = prompt(name + ", please type your weight:")
+    var height = prompt(name + ", Please type your height:")
+
+    print(name + " your IMC is: " + imCalc(weight, height))
+</script>
